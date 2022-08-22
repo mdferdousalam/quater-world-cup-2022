@@ -46,7 +46,13 @@
               <h2 class="card-title justify-center">Lionel Messi</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player1"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -59,7 +65,13 @@
               <h2 class="card-title justify-center">Neymar Jr</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player2"
+                  onclick="addPlayers(this) , this.disabled = true "
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -72,7 +84,13 @@
               <h2 class="card-title justify-center">Kylian Mbappé</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player3"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -85,7 +103,13 @@
               <h2 class="card-title justify-center">Vítor Machado</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player4"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -98,7 +122,13 @@
               <h2 class="card-title justify-center">Sergio Ramos</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player5"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -111,7 +141,13 @@
               <h2 class="card-title justify-center">Renato Sanches</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player6"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -124,7 +160,13 @@
               <h2 class="card-title justify-center">Neymar Jr</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player7"
+                  onclick="addPlayers(this) , this.disabled = true "
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -137,7 +179,13 @@
               <h2 class="card-title justify-center">Kylian Mbappé</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player8"
+                  onclick="addPlayers(this) , this.disabled = true "
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
@@ -150,27 +198,32 @@
               <h2 class="card-title justify-center">Lionel Messi</h2>
               <p class="text-center">36 Goals . 120 Assist</p>
               <div class="card-actions justify-center">
-                <button class="btn btn-primary px-10 text-1xl">Select</button>
+                <button
+                  id="btn-player9"
+                  onclick="addPlayers(this) , this.disabled = true"
+                  class="btn btn-primary px-10 text-1xl"
+                >
+                  Select
+                </button>
               </div>
             </div>
           </div>
         </div>
         <!-- expense calculations section -->
         <div class="my-16 w-3/12">
-          <div class="h-2/5 w-full bg-gray-500 text-white text-center">
-            <h1 class="text-2xl pt-6">Selected - V</h1>
+          <div class="h-2/5 w-11/12 bg-gray-500 text-center">
+            <h1 class="text-2xl text-white pt-6">Selected - V</h1>
             <div class="flex">
               <img class="flex-1" src="images/Ureg-Ureg Marker.png" alt="" />
+              <!-- players added here -->
             </div>
-            <ul class="text-2xl text-left list-decimal pl-10 pt-6">
-              <li>Ferdous</li>
-              <li>Alam</li>
-              <li>Jhenaidah</li>
-              <li>Khulna</li>
-              <li>Bangladesh</li>
-            </ul>
+            <div class="text-xl text-left pt-6">
+              <table class="table table-zebra w-full">
+                <tbody id="playerList"></tbody>
+              </table>
+            </div>
           </div>
-          <div class="h-2/4 w-fit bg-gray-500 text-white mt-8">
+          <div class="h-2/4 w-11/12 bg-gray-500 text-white mt-8">
             <h1 class="text-2xl text-center pt-4">Budget</h1>
             <div class="flex">
               <img class="flex-1" src="images/Ureg-Ureg Marker.png" alt="" />
