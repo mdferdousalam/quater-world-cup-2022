@@ -223,52 +223,72 @@
               </table>
             </div>
           </div>
-          <div class="h-2/4 w-11/12 bg-gray-500 text-white mt-8">
-            <h1 class="text-2xl text-center pt-4">Budget</h1>
+          <!-- budget section here  -->
+          <div class="h-2/4 w-11/12 bg-gray-500 mt-8">
+            <h1 class="text-2xl text-center text-white pt-4">Budget</h1>
             <div class="flex">
               <img class="flex-1" src="images/Ureg-Ureg Marker.png" alt="" />
             </div>
+            <!-- per player cost input field -->
             <div class="flex justify-between mt-7">
-              <h3 class="pl-4">Per Player</h3>
+              <h3 class="pl-4 text-white">Per Player</h3>
               <input
+                id="perPlayerAmount"
                 class="mr-3 px-2"
-                placeholder="amount each player"
+                placeholder="$ amount each player"
                 type="text"
               />
             </div>
+            <!-- player expense button -->
             <div class="card-actions justify-center">
-              <button class="btn btn-primary px-10 my-7 text-1xl">
+              <button
+                id="btn-calculate"
+                class="btn btn-primary px-10 my-7 text-1xl"
+              >
                 Calculate
               </button>
             </div>
+            <!-- player expense -->
             <div class="flex justify-between">
-              <h3 class="pl-4 text-xl">Player Expense</h3>
-              <p class="mr-7">$<span>5000</span></p>
+              <h3 class="pl-4 text-xl text-white">Player Expense</h3>
+              <p class="mr-7 text-white">$<span id="playerExpense">00</span></p>
             </div>
+
+            <!-- manager cost -->
             <div class="flex justify-between my-7">
-              <h3 class="pl-4 pr-4">Manger</h3>
+              <h3 class="pl-4 pr-4 text-white">Manger</h3>
               <input
+                id="managerCostAmount"
                 class="mr-3 px-4"
-                placeholder="enter amount for manager"
+                placeholder="$ enter amount for manager"
                 type="text"
               />
             </div>
+
+            <!-- Coach Cost -->
             <div class="flex justify-between">
-              <h3 class="pl-4">Coach</h3>
+              <h3 class="pl-4 text-white">Coach</h3>
               <input
+                id="coachCostAmount"
                 class="mr-3 px-4"
-                placeholder="enter amount for Coach"
+                placeholder="$ enter amount for Coach"
                 type="text"
               />
             </div>
+            <!-- Total cost calculation button -->
             <div class="card-actions justify-center">
-              <button class="btn btn-primary px-5 my-7 text-1xl">
+              <button
+                id="btn-calculate-total"
+                class="btn btn-primary px-5 my-7 text-1xl"
+              >
                 Calculate Total
               </button>
             </div>
+
+            <!-- Total Cost -->
             <div class="flex justify-between">
-              <h3 class="pl-4 font-medium text-xl">Total</h3>
-              <p class="mr-7">$<span>11000</span></p>
+              <h3 class="pl-4 font-medium text-xl text-white">Total</h3>
+              <p class="mr-7 text-white">$<span id="totalBudget">00</span></p>
             </div>
           </div>
         </div>

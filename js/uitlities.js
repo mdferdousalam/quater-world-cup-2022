@@ -5,6 +5,7 @@ const playerNames = [];
 function displayPlayer(playerNames) {
   // acces the player list
   const playerList = document.getElementById("playerList");
+  // clearing the previous value for each loop
   playerList.innerHTML = "";
   // loop through array of players
   for (let i = 0; i < playerNames.length; i++) {
