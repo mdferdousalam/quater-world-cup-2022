@@ -37,6 +37,7 @@ function addPlayers(element) {
   } else {
     alert("You are not allowed to add more than 5 Players");
   }
+
   //  update player list passed to the display function
   displayPlayer(playerNames);
 }
