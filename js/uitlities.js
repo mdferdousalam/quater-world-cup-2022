@@ -34,6 +34,7 @@ function addPlayers(element) {
   // up-to 5 players selection condition and show alert im more than 5
   if (playerNames.length <= 4) {
     playerNames.push(playerName);
+    element.disabled = true;
   } else {
     alert("You are not allowed to add more than 5 Players");
   }
